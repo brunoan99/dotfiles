@@ -1,21 +1,21 @@
-# shortcyut to this dotfiles path is $ZSH
-export ZSH=$HOME/.dotfiles
+# shortcyut to this dotfiles path is $DOT
+export DOT=$HOME/.dotfiles
+export CONFIG=$HOME/.config
 
 # project folder that we can `c [tab] to`
-export PROJECTS=~/workspace
-export alucar=$PROJECTS/jsCodes/alucar
+export PROJECTS=~/workspace/jsCodes/alucar
 
-# Stash your environment variables in ~/.localrc. This means they'll stay out
-# of your main dotfiles repository (which may be public, like this one), but
-# you'll have access to them in your scripts.
+# Stash environment variables in ~/.localrc. This means they'll stay out
+# of main dotfiles repository (which may be public, like this one), but
+# you'll have access to them in scripts.
 if [[ -a ~/.localrc ]]
 then
   source ~/.localrc
 fi
 
-# all of our zsh files
+# all of zsh files
 typeset -U config_files
-config_files=($ZSH/**/*.zsh)
+config_files=($DOT/**/*.zsh)
 
 # load the path files
 for file in ${(M)config_files:#*/path.zsh}
@@ -48,5 +48,7 @@ zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
 bindkey "^[[A" up-line-or-beginning-search # Up
 bindkey "^[[B" down-line-or-beginning-search # Down
+
+export STARSHIP_CONFIG=$DOT/zsh/starship.toml
 
 eval "$(starship init zsh)"

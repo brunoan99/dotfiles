@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+# Run all dotfiles installers.
+
+set -e
+
+echo ""
+
+mkdir -p $HOME/.config/zsh
+CONFIG=$HOME/.config
+
+cd "$(dirname $0)"/..
+
+# all of sh files
+for file in **/*.sh ; do sh -c $file; done

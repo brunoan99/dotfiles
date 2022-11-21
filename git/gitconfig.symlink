@@ -13,6 +13,7 @@
   s = !git status -s
   a = !git add --all
   c = !git commit -m
+  co = checkout
   cne = !git commit --amend --no-edit
   acne = !git add --all && git commit --amend --no-edit
   ac = !git add --all && git commit -m
