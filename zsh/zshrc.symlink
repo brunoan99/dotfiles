@@ -3,7 +3,7 @@ export DOT=$HOME/.dotfiles
 export CONFIG=$HOME/.config
 
 # project folder that we can `c [tab] to`
-export PROJECTS=~/workspace/jsCodes/alucar
+export PROJECTS=~/workspace/js/alucar
 
 # Stash environment variables in ~/.localrc. This means they'll stay out
 # of main dotfiles repository (which may be public, like this one), but
@@ -17,7 +17,6 @@ fi
 typeset -U config_files
 config_files=($DOT/**/*.zsh)
 
-# load the path files
 for file in ${(M)config_files:#*/path.zsh}
 do
   source $file

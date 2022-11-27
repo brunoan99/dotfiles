@@ -4,8 +4,6 @@
 
 set -e
 
-echo ""
-
 mkdir -p $HOME/.config/zsh
 CONFIG=$HOME/.config
 
