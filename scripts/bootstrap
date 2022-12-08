@@ -50,13 +50,14 @@ setup_tools () {
 }
 
 setup_wsl () {
-  if [[ $(uname -srm) == *microsoft* 
+  if [[ $(uname -srm) == *microsoft*
       || $(uname -srm) == *Microsoft*  ]];
   then
     info "Running on Wsl, keeping wsl folder"
   else
     info "Running out of Wsl, removing wsl folder"
-    rm -rf $DOT/wsl
+    rm -rf $DOTFILES_ROOT/wsl
+    git ls-files --deleted -z | git update-index --assume-unchanged -z --stdin
     success "Folder removed successfully"
   fi
 }
@@ -157,5 +158,5 @@ success "Setup Completed"
 
 echo ""
 info "Starting Installations"
-/bin/bash $DOT/scripts/install
+/bin/bash $DOTFILES_ROOT/scripts/install
 success "Installations Completed"
