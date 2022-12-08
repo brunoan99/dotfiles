@@ -27,8 +27,8 @@ There's a few special files in the hierarchy.
 
 ## Installation
 ```sh
-git clone https://github.com/brunoan99/.dotfiles.git ~/
-~/.dotfiles/bootstrap.sh
+git clone https://github.com/brunoan99/dotfiles.git ~/.dotfiles
+~/.dotfiles/scripts/bootstrap.sh
 ```
 
 
