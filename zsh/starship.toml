@@ -6,7 +6,7 @@ $git_branch\
 $git_state\
 $git_status\
 $fill\
-$cmd_duration $jobs $nodejs $time $sudo\
+$cmd_duration $jobs $nodejs $sudo\
 $line_break\
 $character"""
 
