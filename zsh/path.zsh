@@ -8,3 +8,5 @@ function add_to_path {
 add_to_path "$HOME/.emacs.d/bin"
 add_to_path "$HOME/.local/bin"
 add_to_path "usr/bin/elixir"
+add_to_path "$HOME/.cabal/bin"
+add_to_path "$HOME/.ghcup/bin:$PATH"

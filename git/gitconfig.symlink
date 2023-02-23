@@ -25,6 +25,8 @@
 
   l = !git --no-pager log --oneline -n
   ll = !git log --oneline
+  lr = !git --no-pager log --oneline --reverse -n
+  llr = !git log --oneline --reverse
 
   psh = !git push origin HEAD
   pullm = !git pull origin HEAD
