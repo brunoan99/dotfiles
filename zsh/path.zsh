@@ -4,10 +4,11 @@ function add_to_path {
     PATH=$1${PATH//:$1:/:}
 }
 
-# add vscode path from outside of wsl
-add_to_path "$HOME/.emacs.d/bin"
-add_to_path "$HOME/.local/bin"
-add_to_path "usr/bin/elixir"
-add_to_path "$HOME/.cabal/bin"
-add_to_path "$HOME/.ghcup/bin:$PATH"
-add_to_path "$HOME/go/bin"
+# if a file local-path.zsh exists it will be imported to environment
+# than any path that doesn will be garanted repeated to next bootstrap
+# doesn have to be in path.zsh.
+# Only path of something that is installed in bootstrap process.
+if [[ -a ~/.local-path.zsh ]]
+then
+  source ~/.local-path.zsh
+fi
