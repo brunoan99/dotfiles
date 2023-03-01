@@ -4,6 +4,8 @@ export CLICOLOR=true
 fpath=($DOT/functions $fpath)
 
 autoload -U $DOT/functions/*(:t)
+autoload -U up-line-or-beginning-search
+autoload -U down-line-or-beginning-search
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
@@ -42,3 +44,11 @@ bindkey "\e[3^"   kill-word # urxvt
 bindkey '^H'      backward-kill-word # ctrl+backspace
 bindkey "\e[3;6~" kill-line # ctrl+shift+delete
 bindkey "\e[3@"   kill-line # urxvt
+
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+bindkey "^[[A" up-line-or-beginning-search # Up
+bindkey "^[[B" down-line-or-beginning-search # Down
+
+# completion to not be case sensitive
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
