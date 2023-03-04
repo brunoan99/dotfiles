@@ -49,19 +49,6 @@ setup_tools () {
   success "Packages Success"
 }
 
-setup_wsl () {
-  if [[ $(uname -srm) == *microsoft*
-      || $(uname -srm) == *Microsoft*  ]];
-  then
-    info "Running on Wsl, keeping wsl folder"
-  else
-    info "Running out of Wsl, removing wsl folder"
-    rm -rf $DOTFILES_ROOT/wsl
-    git ls-files --deleted -z | git update-index --assume-unchanged -z --stdin
-    success "Folder removed successfully"
-  fi
-}
-
 link_file () {
   local src=$1 dst=$2
 
@@ -153,7 +140,6 @@ install_dotfiles () {
 success "Setup Started"
 setup_tools
 install_dotfiles
-setup_wsl
 success "Setup Completed"
 
 echo ""
