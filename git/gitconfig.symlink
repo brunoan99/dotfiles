@@ -32,6 +32,7 @@
   pullm = !git pull origin HEAD
 
   remotes = !git remote -v
+  remao = !git remote add origin
   repo = !git remote get-url origin
 
   config = !git config --global --edit
