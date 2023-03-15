@@ -16,3 +16,8 @@ alias lt='ls --tree --level=3'                                        # tree
 alias suspendit='sudo sh -c "echo mem > /sys/power/state"'
 alias upgrade='sudo pacman -Syu && yay -Syu'
 alias auto_clean='sudo pacman -R $(sudo pacman -Qdtq)'
+
+# docker
+alias remove_containers='docker rm -f "$(docker ps -aq)"'
+alias clean_containers='docker container prune'
+alias clean_images='docker image prune -all'
