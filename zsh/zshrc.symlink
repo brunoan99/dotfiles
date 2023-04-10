@@ -1,9 +1,11 @@
-# shortcyut to this dotfiles path is $DOT
+# shortcyuts
+export HOME=/home/snape
 export DOT=$HOME/.dotfiles
 export CONFIG=$HOME/.config
+export RICE=$HOME/.rice
 
 # project folder that we can `c [tab] to`
-export PROJECTS=~/workspace/js/alucar
+export PROJECTS=~/workspace/rust
 
 # Stash environment variables in ~/.localrc. This means they'll stay out
 # of main dotfiles repository (which may be public, like this one), but
