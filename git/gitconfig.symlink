@@ -41,3 +41,5 @@
 [user]
   name = Bruno Andrade
   email = brunoan99@gmail.com
+[safe]
+	directory = /opt/flutter
