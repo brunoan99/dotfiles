@@ -35,7 +35,7 @@
   remao = !git remote add origin
   repo = !git remote get-url origin
 
-  config = !git config --global --edit
+  conf = !git config --global --edit
 [init]
   defaultBranch = master
 [user]
