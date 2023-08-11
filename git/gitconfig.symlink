@@ -14,7 +14,7 @@
   br = branch
 
   a = !git add --all
-  addl = !git add --patch --
+  addl = !git add --patch
   c = !git commit -m
   ac = !git add --all && git commit -m
   cne = !git commit --amend --no-edit
@@ -41,5 +41,6 @@
 [user]
   name = Bruno Andrade
   email = brunoan99@gmail.com
+	signingkey = 6019FF866EA53B4C
 [safe]
 	directory = /opt/flutter
