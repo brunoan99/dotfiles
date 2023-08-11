@@ -4,6 +4,9 @@ function add_to_path {
     PATH=$1${PATH//:$1:/:}
 }
 
+
+export GPG_TTY=$(tty)
+
 # if a file local-path.zsh exists it will be imported to environment
 # than any path that doesn will be garanted repeated to next bootstrap
 # doesn have to be in path.zsh.
