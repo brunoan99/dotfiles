@@ -5,7 +5,7 @@ export CONFIG=$HOME/.config
 export RICE=$HOME/.rice
 
 # project folder that we can `c [tab] to`
-export PROJECTS=~/workspace/rust
+export PROJECTS=~/workspace
 
 # Stash environment variables in ~/.localrc. This means they'll stay out
 # of main dotfiles repository (which may be public, like this one), but
