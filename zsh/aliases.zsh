@@ -9,8 +9,8 @@ alias lt='ls --tree --level=3'                                        # tree
 
 # so
 alias suspendit='sudo sh -c "echo mem > /sys/power/state"'
-alias upgrade='sudo pacman -Syu && yay -Syu'
-alias auto_clean='sudo pacman -R $(sudo pacman -Qdtq)'
+alias upgrade='sudo pacman -Syu --noconfirm && yay -Syu --noconfirm'
+alias auto_clean='sudo pacman -R $(sudo pacman -Qdtq) && yay -Yc'
 
 # docker
 alias d='docker'
