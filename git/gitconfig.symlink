@@ -41,10 +41,3 @@
 [user]
   name = Bruno Andrade
   email = brunoan99@gmail.com
-	signingkey = 6019FF866EA53B4C
-[safe]
-	directory = /opt/flutter
-[commit]
-	gpgsign = true
-[tag]
-	gpgSign = true
