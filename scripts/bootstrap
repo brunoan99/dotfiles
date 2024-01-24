@@ -36,7 +36,8 @@ setup_tools () {
   "archlinux-keyring" "autoconf" "automake" "binutils" "bison"
   "debugedit" "fakeroot" "file" "findutils" "flex" "gawk"
   "gcc" "gettext" "grep" "groff" "gzip" "libtool" "m4" "make"
-  "pacman" "patch" "pkgconf" "sed" "sudo" "texinfo" "which")
+  "pacman" "patch" "pkgconf" "sed" "sudo" "texinfo" "which"
+  "imagemagick" "ffmpeg")
   for package in "${packages[@]}"
   do
     if ! pacman -Qi $package > /dev/null 2>&1 ; then
