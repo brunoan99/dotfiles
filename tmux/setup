@@ -1,0 +1,11 @@
+#!/bin/zsh
+# Setup tmux
+
+. $DOT/utils/print_functions.sh
+
+info "Setup Tmux"
+
+if ln -sf $DOT/tmux/tmux.conf $HOME/.tmux.conf > /dev/null; then
+  success "Config File Linked"
+fi
+
