@@ -2,30 +2,12 @@
 #
 # bootstrap installs tools
 
+. $DOT/utils/print_functions.sh
+
 cd "$(dirname "$0")/.."
 DOTFILES_ROOT=$(pwd -P)
 
 set -e
-
-echo ""
-
-info () {
-    printf "\r  [ \033[00;34m..\033[0m ] $1\n"
-}
-
-user () {
-    printf "\r  [ \033[0;33m??\033[0m ] $1\n"
-}
-
-success () {
-    printf "\r\033[2K  [ \033[00;32mOK\033[0m ] $1\n"
-}
-
-fail () {
-    printf "\r\033[2K  [\033[0;31mFAIL\033[0m] $1\n"
-    echo ""
-    exit
-}
 
 setup_tools () {
   # by default i"m sourcing for arch packages.
@@ -41,10 +23,10 @@ setup_tools () {
   for package in "${packages[@]}"
   do
     if ! pacman -Qi $package > /dev/null 2>&1 ; then
-      sudo pacman -S $package
+      sudo pacman -S $package --noconfirm > /dev/null 2>&1
       success "$package installed"
     else
-          info "$package already installed"
+      info "$package already installed"
     fi
   done
   success "Packages Success"

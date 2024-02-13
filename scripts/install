@@ -10,4 +10,4 @@ CONFIG=$HOME/.config
 cd "$(dirname $0)"/..
 
 # all of sh files
-for file in **/*.sh ; do sh -c $file; done
+for file in $DOT/**/*.sh ; do sh -c $file; done
