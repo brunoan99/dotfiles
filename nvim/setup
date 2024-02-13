@@ -1,0 +1,12 @@
+#!/bin/zsh
+# Setup neovim
+
+. $DOT/utils/print_functions.sh
+
+info "Setup Neovim"
+
+mkdir -p $CONFIG/nvim > /dev/null
+
+if ln -sf $DOT/nvim/init.lua $CONFIG/nvim/init.lua > /dev/null; then
+  success "Config File Linked"
+fi
