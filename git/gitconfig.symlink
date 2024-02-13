@@ -3,8 +3,8 @@
 [credential "https://gist.github.com"]
   helper = !/usr/bin/gh auth git-credential
 [core]
-  paper = cat
   editor = code --wait
+  pager = bat
 [push]
   followTags = true
 [alias]
