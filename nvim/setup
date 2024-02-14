@@ -7,6 +7,10 @@ info "Setup Neovim"
 
 mkdir -p $CONFIG/nvim > /dev/null
 
-if ln -sf $DOT/nvim/init.lua $CONFIG/nvim/init.lua > /dev/null; then
-  success "Config File Linked"
+
+if ln -sf $DOT/nvim/config/* $CONFIG/nvim > /dev/null \
+&& ln -sf $DOT/nvim/config/.* $CONFIG/nvim > /dev/null; then
+  success "Config Files Linked"
+else
+  fail "Error on Linking Files"
 fi

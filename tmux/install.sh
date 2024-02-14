@@ -6,7 +6,7 @@
 info "Installing Tmux"
 
 if pacman -Qi tmux > /dev/null 2>&1; then
-  info "Tmux already installed"
+  info "Tmux already Installed"
 else
   if sudo pacman -S tmux --noconfirm --quiet > /dev/null 2>&1; then
     success "Tmux Installed"
@@ -17,8 +17,17 @@ fi
 
 info "Installing Tpm"
 
-if git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm > /dev/null 2>&1; then
-  success "Tpm installed"
+if [ -d $HOME/.tmux/plugins/tpm ]; then
+  info "Tpm already Installed"
 else
-  fail "Couldn't install Tpm"
+  if git clone https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm > /dev/null 2>&1; then
+    success "Tpm Installed"
+  else
+    fail "Couldn't install Tpm"
+  fi
 fi
+
+info "Install Tpm Plugins"
+sh $HOME/.tmux/plugins/tpm/scripts/install_plugins.sh
+
+success "Tpm and Add-ons Installed"
