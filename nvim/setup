@@ -5,11 +5,9 @@
 
 info "Setup Neovim"
 
-mkdir -p $CONFIG/nvim > /dev/null
+rm -rf $CONFIG/nvim
 
-
-if ln -sf $DOT/nvim/config/* $CONFIG/nvim > /dev/null \
-&& ln -sf $DOT/nvim/config/.* $CONFIG/nvim > /dev/null; then
+if ln -sf $DOT/nvim/config $CONFIG/nvim > /dev/null ; then
   success "Config Files Linked"
 else
   fail "Error on Linking Files"

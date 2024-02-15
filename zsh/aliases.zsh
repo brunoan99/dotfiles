@@ -1,11 +1,14 @@
 # terminal
 alias reload='. ~/.zshrc'
 
-# general use
+# exa on ls
 alias ls='exa --icons'                                                # ls
 alias ll='ls -lbGF --git'                                             # long list
 alias la='ls -lbhHigUSa --git --color-scale'                          # all list
 alias lt='ls --tree --level=3'                                        # tree
+
+# zoxide on cd
+alias cd='z'
 
 # so
 alias suspendit='sudo sh -c "echo mem > /sys/power/state"'
