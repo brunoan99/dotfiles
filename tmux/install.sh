@@ -26,8 +26,3 @@ else
     fail "Couldn't install Tpm"
   fi
 fi
-
-info "Install Tpm Plugins"
-sh $HOME/.tmux/plugins/tpm/scripts/install_plugins.sh
-
-success "Tpm and Add-ons Installed"
