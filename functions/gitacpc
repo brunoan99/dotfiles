@@ -1,0 +1,7 @@
+#!/bin/zsh
+#
+# commit with a message
+# push to github
+# clear the terminal
+
+git ac $1 && git psh && clear;
