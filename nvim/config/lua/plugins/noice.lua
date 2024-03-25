@@ -9,6 +9,9 @@ return {
 				},
 			},
 		},
+    highlights = {
+      NotifyBackground = { bg = "#FFFFFF", fg = "#000000" },
+    },
 	},
 	dependencies = {
 		"MunifTanjim/nui.nvim",
