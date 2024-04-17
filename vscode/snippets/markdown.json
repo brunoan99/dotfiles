@@ -1,0 +1,90 @@
+{
+  "key-value": {
+    "scope": "markdown",
+    "prefix": [
+      "kv",
+      "key-value",
+    ],
+    "body": [
+      "<span style=\"color: #9cdcfe\">$1</span>: <span style=\"color: #4ec9b0\">$2</span>;",
+    ],
+    "description": "Create a key value span with colors to neutral field",
+  },
+  "removed": {
+    "scope": "markdown",
+    "prefix": [
+      "rm",
+      "removed",
+      "removed-field"
+    ],
+    "body": [
+      "<span style=\"background-color: #632e33; color: #ff0000\">- $1: $2;</span>",
+    ],
+    "description": "Create a key value span with colors to removed field",
+  },
+  "added": {
+    "scope": "markdown",
+    "prefix": [
+      "add",
+      "added",
+      "added-field",
+    ],
+    "body": [
+      "<span style=\"background-color: #22392f; color: #9bb955\">+ $1: $2;</span>",
+    ],
+    "description": "Create a key value span with colors to added field",
+  },
+  "string": {
+    "scope": "markdown",
+    "prefix": [
+      "string",
+      "str",
+    ],
+    "body": [
+      "<span style=\"color: #4ec9b0\">string</span>",
+    ],
+    "description": "Create a string label for value field"
+  },
+  "number": {
+    "scope": "markdown",
+    "prefix": [
+      "number",
+    ],
+    "body": [
+      "<span style=\"color: #4ec9b0\">number</span>",
+    ],
+    "description": "Create a number label for value field"
+  },
+  "boolean": {
+    "scope": "markdown",
+    "prefix": [
+      "boolean",
+      "bool",
+    ],
+    "body": [
+      "<span style=\"color: #4ec9b0\">boolean</span>",
+    ],
+    "description": "Create a boolean label for value field"
+  },
+  "unknown": {
+    "scope": "markdown",
+    "prefix": [
+      "unknown",
+    ],
+    "body": [
+      "<span style=\"color: #4ec9b0\">unknown</span>",
+    ],
+    "description": "Create a unknown label for value field"
+  },
+  "comment": {
+    "scope": "markdown",
+    "prefix": [
+      "comment",
+      "cmt"
+    ],
+    "body": [
+      "<span style=\"color: #787f8a\">// $1</span>",
+    ],
+    "description": "Create a comment"
+  }
+}

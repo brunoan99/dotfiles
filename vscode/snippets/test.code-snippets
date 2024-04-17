@@ -1,0 +1,40 @@
+{
+  "describe-test": {
+    "scope": "javascript, typescript",
+    "prefix": [
+      "describe-test",
+    ],
+    "body": [
+      "describe('$1', () => {",
+      "\ttest('$2', () => {",
+      "\t\t$3",
+      "\t})",
+      "})",
+    ],
+    "description": "Create a describe block with a test block for Jest"
+  },
+  "describe-jest": {
+    "scope": "javascript, typescript",
+    "prefix": [
+      "describe-jest",
+    ],
+    "body": [
+      "describe('$1', () => {",
+      "",
+      "})",
+    ],
+    "description": "Create a describe block for Jest"
+  },
+  "test-jest": {
+    "scope": "javascript, typescript",
+    "prefix": [
+      "test",
+    ],
+    "body": [
+      "test('$2', () => {",
+      "\t$3",
+      "})",
+    ],
+    "description": "Create a test block for Jest"
+  }
+}
