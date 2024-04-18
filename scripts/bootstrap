@@ -2,6 +2,11 @@
 #
 # bootstrap installs tools
 
+export HOME=/home/snape
+export DOT=$HOME/.dotfiles
+export CONFIG=$HOME/.config
+export RICE=$HOME/.rice
+
 . $DOT/utils/print_functions.sh
 
 cd "$(dirname "$0")/.."
@@ -19,7 +24,11 @@ setup_tools () {
   "debugedit" "fakeroot" "file" "findutils" "flex" "gawk"
   "gcc" "gettext" "grep" "groff" "gzip" "libtool" "m4" "make"
   "pacman" "patch" "pkgconf" "sed" "sudo" "texinfo" "which"
+<<<<<<< Updated upstream
   "imagemagick" "ffmpeg" "less" "fzf" "net-tools")
+=======
+  "imagemagick" "ffmpeg" "less" "fzf" "zoxide")
+>>>>>>> Stashed changes
   for package in "${packages[@]}"
   do
     if ! pacman -Qi $package > /dev/null 2>&1 ; then

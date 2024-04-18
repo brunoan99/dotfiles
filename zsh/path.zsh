@@ -6,6 +6,7 @@ function add_to_path {
 
 
 export GPG_TTY=$(tty)
+eval "$(zoxide init zsh)"
 
 # if a file local-path.zsh exists it will be imported to environment
 # than any path that doesn will be garanted repeated to next bootstrap

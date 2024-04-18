@@ -32,7 +32,7 @@ setopt HIST_IGNORE_ALL_DUPS # delete old recorded entry if new entry is a duplic
 setopt HIST_REDUCE_BLANKS # remove blanks from entries
 setopt HIST_FIND_NO_DUPS # don't display a line previously found
 setopt HIST_IGNORE_SPACE # remove entries when first char is a space
-setopt HIST_SAVE_NO_DUPS # don't write duplicate entries in the history file 
+setopt HIST_SAVE_NO_DUPS # don't write duplicate entries in the history file
 unsetopt HIST_VERIFY # execute commands using history (e.g.: using !$) immediately
 
 # don't expand aliases _before_ completion has finished

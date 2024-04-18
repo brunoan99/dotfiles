@@ -9,7 +9,7 @@ success () {
 
 # zsh-autocomplete
 if [ ! -d "$CONFIG/zsh/zsh-autosuggestions" ]
-then 
+then
   git clone https://github.com/zsh-users/zsh-autosuggestions $CONFIG/zsh/zsh-autosuggestions
   success "zsh-autosuggestions installed"
 else info "zsh-autosuggestions already installed"
@@ -17,10 +17,10 @@ fi
 
 # zsh-syntax-highlighting
 if [ ! -d "$CONFIG/zsh/zsh-syntax-highlighting" ]
-then 
+then
   git clone https://github.com/zsh-users/zsh-syntax-highlighting $CONFIG/zsh/zsh-syntax-highlighting
   success "zsh-syntax-highlighting installed"
-else info "zsh-syntax-highlighting already installed" 
+else info "zsh-syntax-highlighting already installed"
 fi
 
 declare -a packages=("bat" "exa" "starship")
