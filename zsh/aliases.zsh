@@ -2,7 +2,7 @@
 alias reload='. ~/.zshrc'
 
 # exa on ls
-alias ls='exa --icons'                                                		# ls
+alias ls='exa --icons -laa'                                           		# ls
 alias ll='ls -lbGF --no-filesize --no-user --no-time --git'                     # long list
 alias la='ls -lba  --no-filesize --no-user --no-time --git --color-scale'       # all list
 alias lt='ls -lT   --no-filesize --no-user --no-time --git --level=3'           # tree

@@ -6,6 +6,11 @@ function add_to_path {
 
 
 export GPG_TTY=$(tty)
+
+# mise
+eval "$(/home/snape/.local/bin/mise activate zsh)"
+
+# zoxide
 eval "$(zoxide init zsh)"
 
 # if a file local-path.zsh exists it will be imported to environment
