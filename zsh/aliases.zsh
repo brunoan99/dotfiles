@@ -9,6 +9,7 @@ alias lt='ls -lT   --no-filesize --no-user --no-time --git --level=3'           
 
 # zoxide on cd
 alias cd='z'
+alias cdi="zi"
 
 # so
 alias suspendit='sudo sh -c "echo mem > /sys/power/state"'
