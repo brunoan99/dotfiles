@@ -27,3 +27,6 @@ alias clean_images='docker image prune'
 # cargo
 alias cargo-clippy='cargo clippy -- -A clippy::all -W clippy::correctness -W clippy::suspicious -W clippy::complexity -W clippy::perf -W clippy::style -W clippy::pedantic -W clippy::nursery -W clippy::cargo'
 alias cw='cargo-watch --clear --'
+
+# code
+alias codi='code-insiders'
