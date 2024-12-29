@@ -3,7 +3,7 @@
 [credential "https://gist.github.com"]
   helper = !/usr/bin/gh auth git-credential
 [core]
-  editor = code --wait
+  editor = code-insiders --wait
   pager = bat
 [push]
   followTags = true
@@ -37,7 +37,7 @@
 
   conf = !git config --global --edit
 [init]
-  defaultBranch = master
+  defaultBranch = main
 [user]
   name = Bruno Andrade
   email = brunoan99@gmail.com

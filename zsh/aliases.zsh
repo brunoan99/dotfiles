@@ -5,7 +5,7 @@ alias reload='. ~/.zshrc'
 alias ls='exa --icons -laa'                                           		# ls
 alias ll='ls -lbGF --no-filesize --no-user --no-time --git'                     # long list
 alias la='ls -lba  --no-filesize --no-user --no-time --git --color-scale'       # all list
-alias lt='ls -lT   --no-filesize --no-user --no-time --git --level=3'           # tree
+alias lt='exa --icons -lT --no-filesize --no-user --no-time --git --level=3'           # tree
 
 # zoxide on cd
 alias cd='z'
@@ -14,7 +14,7 @@ alias cdi="zi"
 # so
 alias suspendit='sudo sh -c "echo mem > /sys/power/state"'
 alias upgrade='sudo pacman -Syu --noconfirm && yay -Syu --noconfirm'
-alias auto_clean='sudo pacman -R $(sudo pacman -Qdtq) && yay -Yc'
+alias updt='upgrade && auto_clean'
 
 # docker
 alias d='docker'
