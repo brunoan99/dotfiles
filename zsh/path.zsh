@@ -21,3 +21,5 @@ if [[ -a ~/.local-path.zsh ]]
 then
   source ~/.local-path.zsh
 fi
+
+add_to_path "/usr/bin/vendor_perl"
