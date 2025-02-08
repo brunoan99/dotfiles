@@ -1,6 +1,6 @@
 function auto_clean {
   {
-    (sudo pacman -R $(sudo pacman -Qdtq) && yay -Yc~)  2>/dev/null
+   (sudo pacman -R --noconfirm $(sudo pacman -Qdtq) && yay -Yc~) 2>/dev/null;
   } || {
     echo "no targets to remove"
   }
