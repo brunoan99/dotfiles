@@ -23,3 +23,5 @@ then
 fi
 
 add_to_path "/usr/bin/vendor_perl"
+
+add_to_path "opt/fakeroot/bin"
